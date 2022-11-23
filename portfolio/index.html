@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="portfolio.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/30b482bc56.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="top">
+        <div class="container">
+            <nav class="scroll">
+                <img src="Untitled1.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Skills</a></li>
+                    <li><a href="#" target="_blank">Certificates</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="top-text">
+                <h2>Hello, I am</h2>
+                <h1>Arghya Hazra</h1>
+                <p>I am a Software Developer</p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------- ABOUT------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile1.png" alt="profile_pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-header"><span>About</span> me.</h1>
+                    <p>I am undergrad at KIIT University and a passionate learner having the thrust of learning new skills. I aspire to be a Software Developer. I came to know about this huge world of coding lately but know I am totally in love with it.<br> I am very keen on how things works online, thats how the bond became stonger. I am looking for a role where I can contribute,grow and learn.</p>
+                    
+                    <div class="tabs">
+                        <div class="links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="links" onclick="opentab('certificates')">Certificates</div>
+                        <div class="links" onclick="opentab('education')">Education</div>
+                        <div class="links" onclick="opentab('projects')">Projects</div>
+                    </div>
+                    <div class="contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Website Interfaces</li>
+                            <li><span>C++</span><br>Intermediate</li>
+                            <li><span>SQL</span><br>Intermediate</li>
+                            <li><span>Inkscape</span><br>Intermediate</li>
+                            <li><span>Video Editing</span><br>Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="certificates">
+                        <ul>
+                            <li><a href="https://www.hackerrank.com/certificates/384bc1ce6030" target="_blank"><span>Problem Solving (Basic)</span></a></li>
+                            <li><a href="https://www.hackerrank.com/certificates/103e7c412065" target="_blank"><span>Problem Solving (Intermediate)</span></a></li>
+                            <li><a href="https://www.hackerrank.com/certificates/13519ce86112" target="_blank"><span>SQL (Basic)</span></a></li>
+                            <li><a href="https://analytics.google.com/analytics/academy/certificate/0Gdw11oARi6DxghqL85s5Q" target="_blank"><span>Google analytics for beginners</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span>B.tech (CSE)</span><br>at KIIT University</li>
+                            <li><span>10th</span><br>at Burdwan Model School(2017)</li>
+                            <li><span>12th</span><br>at Burdwan Model School(2019)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-------------- contact --------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-header"></i>Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i> arghyahazra137@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7001620233</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/arghya-hazra-059b87207/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/arghya137"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/r.a.j_13_/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="" download class="btn">Download CV</a>
+                </div>
+                <div class="col-2">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Review"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="reset" class="btn btn2">Reset</button> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Arghya. Made with the use of Html5, CSS3 and Js</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("links");
+        var tabcontents = document.getElementsByClassName("contents");
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-150px";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
