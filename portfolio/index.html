@@ -17,11 +17,11 @@
             <nav class="scroll">
                 <img src="Untitled1.png" class="logo" alt="logo">
                 <ul id="sidemenu">
-                    <li><a href="#" target="_blank">Home</a></li>
-                    <li><a href="#" target="_blank">About</a></li>
-                    <li><a href="#" target="_blank">Interests</a></li>
-                    <li><a href="#" target="_blank">Gallery</a></li>
-                    <li><a href="#" target="_blank">Contact</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Interests</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -54,6 +54,7 @@
                         <ul>
                             <li><span>UI/UX</span><br>Designing Website Interfaces</li>
                             <li><span>C++</span><br>Intermediate</li>
+                            <li><span>Python</span><br>Intermediate</li>
                             <li><span>SQL</span><br>Intermediate</li>
                             <li><span>Inkscape</span><br>Intermediate</li>
                             <li><span>Video Editing</span><br>Intermediate</li>
@@ -76,7 +77,7 @@
                     </div>
                     <div class="contents" id="projects">
                         <ul>
-                            <li><a href="http://github.com/arghya137/projects/tree/main/drink_reminder" target="_blank"><span>Drink Alert Reminder using Python</span></a></li>
+                            <li><a href="http://github.com/arghya137/projects/tree/main/drink_reminder" target="_blank"><span>Drink Water Reminder using Python</span></a></li>
                             
                         </ul>
                     </div>
@@ -100,13 +101,14 @@
                     <a href="" download class="btn">Download CV</a>
                 </div>
                 <div class="col-2">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Review"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                         <button type="reset" class="btn btn2">Reset</button> 
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -141,6 +143,23 @@
             sidemenu.style.right="-150px";
         }
     </script>
-    <script src="script.js"></script>
+    <script src="script.js"></script>      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzi_POOLFH1L6S6t3R9EShuMs3UetTfkSFNzZ0z3hvUvTdAcgBgPdPbloD6ai9Ars5umQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submitted."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
