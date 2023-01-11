@@ -18,8 +18,8 @@
                 <ul id="sidemenu">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#">Education</a></li>
                     <li><a href="#">Interests</a></li>
-                    <li><a href="#">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -37,47 +37,61 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="PIC.png" alt="profile_pic">
+                    <img src="PIC1.jpg" alt="profile_pic">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-header"><span>About</span> me.</h1>
-                    <p>I am undergrad at KIIT University and a passionate learner having the thrust of learning new skills. I aspire to be a Software Developer. I came to know about this huge world of coding lately but know I am totally in love with it.<br> I am very keen on how things works online, thats how the bond became stonger. I am looking for a role where I can contribute,grow and learn.</p>
-                    
+                    <p>I am an undergrad at KIIT University and I come from Bardhaman, West Bengal. I am a passionate learner who is always striving to improve myself. Front-end Development is something that I am familiar with and I am aspiring to become a Software Engineer. In addition, I have recently begun to explore the field of Machine Learning, in which I am working on a team project under the Microsoft Learn Student Ambassador, KIIT chapter. I came to know about this huge world of coding lately but now I am totally in love with it. I am very keen on how things work online, that's how the bond became stonger. Beside these, I have interests in the fields of Photography, Content creation, Trekking through the mountains, exploring nature and Sports mainly Football and Cricket.</p>
                     <div class="tabs">
-                        <div class="links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="links active-link" onclick="opentab('skills')">Tech-Skills</div>
                         <div class="links" onclick="opentab('certificates')">Certificates</div>
-                        <div class="links" onclick="opentab('education')">Education</div>
                         <div class="links" onclick="opentab('projects')">Projects</div>
                     </div>
                     <div class="contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Website Interfaces</li>
+                        <ul class="skill">
                             <li><span>C++</span><br>Intermediate</li>
                             <li><span>Python</span><br>Intermediate</li>
-                            <li><span>SQL</span><br>Intermediate</li>
-                            <li><span>Inkscape</span><br>Intermediate</li>
-                            <li><span>Video Editing</span><br>Intermediate</li>
+                            <li><span>SQL</span><br>Basic</li>
+                            <li><span>HTML</span><br>Intermediate</li>
+                            <li><span>CSS</span><br>Intermediate</li>
+                            <li><span>JavaScript</span><br>Basic</li>
+                            <li><span>Inkscape</span><br>Basic</li>
+                            <li><span>Machine Learning</span><br>Basic</li>
+                        </ul>
+                        <ul class="lib">
+                            <h3>Other skills and libraries:-</h3>
+                            <li>Problem Solving</li>
+                            <li>NumPy</li>
+                            <li>pandas</li>
+                            <li>Github</li>
+                            <li>Data visualization</li>
+                            <li>Data cleaning</li>
+                            <li>Statistical Modeling</li>
                         </ul>
                     </div>
                     <div class="contents" id="certificates">
                         <ul>
-                            <li><a href="https://www.hackerrank.com/certificates/384bc1ce6030" target="_blank"><span>Problem Solving (Basic)</span></a></li>
-                            <li><a href="https://www.hackerrank.com/certificates/103e7c412065" target="_blank"><span>Problem Solving (Intermediate)</span></a></li>
-                            <li><a href="https://www.hackerrank.com/certificates/13519ce86112" target="_blank"><span>SQL (Basic)</span></a></li>
-                            <li><a href="https://analytics.google.com/analytics/academy/certificate/0Gdw11oARi6DxghqL85s5Q" target="_blank"><span>Google analytics for beginners</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="contents" id="education">
-                        <ul>
-                            <li><span>B.tech (CSE)</span><br>at KIIT University</li>
-                            <li><span>10th</span><br>at Burdwan Model School(2017)</li>
-                            <li><span>12th</span><br>at Burdwan Model School(2019)</li>
+                            <li><a href="C:\Users\KIIT\Downloads\problemsolving-basic.png" target="_blank"><span>Problem Solving </span></a>(Basic)</li>
+                            <li><a href="C:\Users\KIIT\Downloads\problemsolving-intermediate.png" target="_blank"><span>Problem Solving </span></a>(Intermediate)</li>
+                            <li><a href="C:\Users\KIIT\Downloads\SQL-hackerrank.png" target="_blank"><span>SQL </span></a>(Basic)</li>
+                            <li><a href="C:\Users\KIIT\Downloads\python-hackerrank.png" target="_blank"><span>Python </span></a>(Basic)</li>
+                            <li><a href="C:\Users\KIIT\Downloads\Google analytics.jpg" target="_blank"><span>Google analytics for beginners</span></a></li>
                         </ul>
                     </div>
                     <div class="contents" id="projects">
                         <ul>
-                            <li><a href="http://github.com/arghya137/projects/tree/main/drink_reminder" target="_blank"><span>Drink Water Reminder using Python</span></a></li>
-                            <li><a href="https://github.com/arghya137/projects/tree/main/image_viewer" target="_blank"><span>Image Viewer using Python</span></a></li>
+                            <li><span>Drink Water Reminder using Python</span><br>-It's basically a notification reminder that had been set through
+                                Python with the help of time library. A particular time is being set
+                                on the code after which the windows will notify to have a glass of
+                                water.</li>
+                            <li><span>Image Viewer using Python</span><br>-Made a image viewer display with the help of Python libraries such
+                                as tkinter, PIL. It opens a pop-up window and shows the image file
+                                that had been selected.</li>
+                            <li><span>Advanced Virtual Assistant</span><br>-It's a virtual assistant created in python with the help of certain
+                                libraries - pyttsx3, speech_recognition, webbrowser, pywikihow,
+                                pywhatkit, requests, cv2, Beautifulsoup, os and many more. It can
+                                perform almost any given task. Even now, I update more features
+                                to it whenever I get an idea.</li>
                         </ul>
                     </div>
                 </div>
@@ -101,9 +115,9 @@
                 </div>
                 <div class="col-2">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Review"></textarea>
+                        <input type="text" class='Name' name="Name" placeholder="Your Name" required>
+                        <input type="email" class='Email' name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" class='Review' rows="6" placeholder="Your Review"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                         <button type="reset" class="btn btn2">Reset</button> 
                     </form>
