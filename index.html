@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="portfolio.png">
+    <link rel="icon" href="cv.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/30b482bc56.js" crossorigin="anonymous"></script>
 </head>
@@ -18,7 +18,7 @@
                 <ul id="sidemenu">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Education</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -98,12 +98,22 @@
             </div>    
         </div>
     </div>
-    <!-------------- contact --------------->
+    <!------------------------------------------- education -------------------------------------------->
+    <div id="education">
+        <div class="container">
+            <div class="row">
+                <div class="edu-col-1">
+                    <h1 class="sub-header">Education</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------- contact ---------------------------------------------->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-1">
-                    <h1 class="sub-header"></i>Contact Me</h1>
+                    <h1 class="sub-header">Contact Me</h1>
                     <p><i class="fa-solid fa-square-envelope"></i> arghyahazra137@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> 7001620233</p>
                     <div class="social-icons">
@@ -119,7 +129,7 @@
                         <input type="email" class='Email' name="Email" placeholder="Your Email" required>
                         <textarea name="Message" class='Review' rows="6" placeholder="Your Review"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
-                        <button type="reset" class="btn btn2">Reset</button> 
+                        <button type="reset" class="btn btn3">Reset</button> 
                     </form>
                     <span id="msg"></span>
                 </div>

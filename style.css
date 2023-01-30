@@ -171,6 +171,15 @@ nav ul li a:hover::after{
     color: #fff;
     text-decoration: none;
 }
+/* -------- Education -------- */
+#education{
+    padding: 80px 0;
+}
+.edu-col-1{
+    flex-basis: 35%;
+    margin-top: 20%;
+    margin-left: 25px;
+}
 /* -------- Contact --------- */
 .col-1{
     flex-basis: 35%;
@@ -214,13 +223,16 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: white;
     transition: background 0.3s;
-
 }
 .btn:hover{
     background: #ef6817;
 }
 .btn.btn2{
     background: #ef6817;
+}
+.btn.btn3{
+    background: #ef6817;
+    padding: 14px 53px;
 }
 .col-2 form{
     width: 100%;
@@ -238,6 +250,12 @@ form input, form textarea{
 }
 form btn2{
     padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form btn3{
+    padding: 14px 64px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
@@ -260,17 +278,26 @@ nav .fa-solid{
 
 @media only screen and (max-width: 500px){
     #top{
-        background-image: url("GOKU_mob.png");
+        background-image: url("xx2.png");
+        background-size: cover;
+        background-position: right;
     }
     .logo{
+        width: 40%;
+        margin-left: 0;
+        padding-left: 0;
         padding-right: 45%;
     }
     .top-text{
-        margin-top: 70%;
-        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 110%;
+        font-size: 100%;
     }
     .top-text h1{
-        font-size: 30px;
+        font-size: 187.5%;
+    }
+    .top-text p{
+        font-size: 150%;
     }
     nav .fa-solid{
         display: block;
@@ -331,6 +358,9 @@ nav .fa-solid{
     .col-1, .col-2{
         flex-basis: 100%;
     }
+    .col-1{
+        margin-left: 10%;
+    }
     .col-1 h1{
         margin-bottom: 30px;
     }
@@ -342,7 +372,7 @@ nav .fa-solid{
         margin-left: 10px;
     }
     .btn{
-        margin-left: 20%;
+        margin-left: 15%;
     }
     .Name{
         margin-left: 60px;
@@ -354,7 +384,13 @@ nav .fa-solid{
         margin-left: 60px;
     }
     .btn.btn2{
-        margin-left: 40px;
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-bottom: 5%;
+    }
+    .btn.btn3{
+        margin-top: 0;
+        margin-left: 30%;
     }
     .copyright{
         font-size: 12px;
