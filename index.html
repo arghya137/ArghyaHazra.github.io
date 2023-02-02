@@ -9,6 +9,7 @@
     <link rel="icon" href="cv.png">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/30b482bc56.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
     <div id="top">
@@ -18,17 +19,17 @@
                 <ul id="sidemenu">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#">Interests</a></li>
+                    <li><a href="#about">Education</a></li>
+                    <li><a href="#about">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="top-text">
-                <h2>Hello, I am</h2>
+                <h2>Hello, myself</h2>
                 <h1>Arghya Hazra</h1>
-                <p>I am a Software Developer</p>
+                <p>And, I am a <span class="typing"></span></p>
             </div>
         </div>
     </div>
@@ -46,6 +47,7 @@
                         <div class="links active-link" onclick="opentab('skills')">Tech-Skills</div>
                         <div class="links" onclick="opentab('certificates')">Certificates</div>
                         <div class="links" onclick="opentab('projects')">Projects</div>
+                        <div class="links" onclick="opentab('education')">Education</div>
                     </div>
                     <div class="contents active-tab" id="skills">
                         <ul class="skill">
@@ -71,41 +73,41 @@
                     </div>
                     <div class="contents" id="certificates">
                         <ul>
-                            <li><a href="C:\Users\KIIT\Downloads\problemsolving-basic.png" target="_blank"><span>Problem Solving </span></a>(Basic)</li>
-                            <li><a href="C:\Users\KIIT\Downloads\problemsolving-intermediate.png" target="_blank"><span>Problem Solving </span></a>(Intermediate)</li>
-                            <li><a href="C:\Users\KIIT\Downloads\SQL-hackerrank.png" target="_blank"><span>SQL </span></a>(Basic)</li>
-                            <li><a href="C:\Users\KIIT\Downloads\python-hackerrank.png" target="_blank"><span>Python </span></a>(Basic)</li>
-                            <li><a href="C:\Users\KIIT\Downloads\Google analytics.jpg" target="_blank"><span>Google analytics for beginners</span></a></li>
+                            <li><a href="basic_certificate.png" target="_blank"><span>Problem Solving </span></a>(Basic)</li>
+                            <li><a href="intermediate_certificate.png" target="_blank"><span>Problem Solving </span></a>(Intermediate)</li>
+                            <li><a href="SQL-hackerrank.png" target="_blank"><span>SQL </span></a>(Basic)</li>
+                            <li><a href="python-hackerrank.png" target="_blank"><span>Python </span></a>(Basic)</li>
+                            <li><a href="Google analytics.jpg" target="_blank"><span>Google analytics for beginners</span></a></li>
                         </ul>
                     </div>
                     <div class="contents" id="projects">
                         <ul>
-                            <li><span>Drink Water Reminder using Python</span><br>-It's basically a notification reminder that had been set through
-                                Python with the help of time library. A particular time is being set
-                                on the code after which the windows will notify to have a glass of
-                                water.</li>
-                            <li><span>Image Viewer using Python</span><br>-Made a image viewer display with the help of Python libraries such
-                                as tkinter, PIL. It opens a pop-up window and shows the image file
-                                that had been selected.</li>
-                            <li><span>Advanced Virtual Assistant</span><br>-It's a virtual assistant created in python with the help of certain
+                            <li><span>DDoS attack prediction</span> (12/2022 - Present)<br>-A binary tree classification model approach to predict if the
+                                packets are from a DDoS attack. Python libraries such as NumPy,
+                                pandas, seaborn, scikit-learn have been used.</li>
+                            <li><span>Advanced Virtual Assistant</span> (12/2022)<br>-It's a virtual assistant created in python with the help of certain
                                 libraries - pyttsx3, speech_recognition, webbrowser, pywikihow,
                                 pywhatkit, requests, cv2, Beautifulsoup, os and many more. It can
                                 perform almost any given task. Even now, I update more features
                                 to it whenever I get an idea.</li>
+                            <li><span>Drink Water Reminder using Python</span> (10/2022)<br>-It's basically a notification reminder that had been set through
+                                Python with the help of time library. A particular time is being set
+                                on the code after which the windows will notify to have a glass of
+                                water.</li>
+                            <li><span>Image Viewer using Python</span> (10/2022)<br>-Made a image viewer display with the help of Python libraries such
+                                as tkinter, PIL. It opens a pop-up window and shows the image file
+                                that had been selected.</li>
+                        </ul>
+                    </div>
+                    <div class="contents" id="education">
+                        <ul>
+                            <li><span>B.tech in Computer Science</span> (07/2020 - Present)<br>KIIT University, Bhubaneshwar</li>
+                            <li><span>Class XII</span> (2019)<br>Burdwan Model School(CBSE)</li>
+                            <li><span>Class X</span> (2017)<br>Burdwan Model School(CBSE)</li>
                         </ul>
                     </div>
                 </div>
             </div>    
-        </div>
-    </div>
-    <!------------------------------------------- education -------------------------------------------->
-    <div id="education">
-        <div class="container">
-            <div class="row">
-                <div class="edu-col-1">
-                    <h1 class="sub-header">Education</h1>
-                </div>
-            </div>
         </div>
     </div>
     <!-------------------------------------------- contact ---------------------------------------------->
@@ -121,7 +123,7 @@
                         <a href="https://github.com/arghya137"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/r.a.j_13_/"><i class="fa-brands fa-square-instagram"></i></a>
                     </div>
-                    <a href="" download class="btn">Download CV</a>
+                    <a href="Arghya's CV.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="col-2">
                     <form name="submit-to-google-sheet">

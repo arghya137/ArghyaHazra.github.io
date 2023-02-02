@@ -8,3 +8,11 @@ $(document).ready(function(){
         }
     })
 });
+
+// typing animation script
+var typed = new Typed(".typing", {
+    strings: ["Software Developer...", "Front-end Developer...", "ML enthusiast..."],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+});
