@@ -121,12 +121,16 @@ nav ul li a:hover::after{
 .skill li{
     display:inline-block;
     position: relative;
-    padding-right: 12%;
+    padding-right: 2%;
 }
 .lib li{
     display: inline-block;
     position: relative;
     padding-right: 2%;
+}
+.skill h3{
+    margin-top: 10px;
+    color: #D36B00;
 }
 .lib h3{
     margin-top: 10px;
@@ -173,6 +177,21 @@ nav ul li a:hover::after{
 .project{
     color: #fff;
     text-decoration: none;
+}
+/*-------- Experience---------*/
+.exp-col{
+    flex-basis: 60%;
+}
+.exp-col p{
+    font-size: 16px;
+}
+.exp-h3{
+    margin-top: 10px;
+    color: #D36B00;
+}
+.exp-h4{
+    margin-top: 10px;
+    color: #FBA834;
 }
 /* -------- Contact --------- */
 .col-1{
